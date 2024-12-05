@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kablammo:MORF@7&family=Nosifer&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 100px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #202c36;
+}
+
+header {
+  background-color: #2b3844;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 20px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.flex-container-1 {
+  padding-top: 100px;
+  height: 800px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #2b3844;
+  padding: 15px;
+  width: 480px;
+}
+
+.input input {
+  background: none;
+  color: white;
+  border: none;
+}
+
+.flags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.box {
+  height: 250px;
+  background-color: #2b3844;
+  color: white;
+}
+
+.box p {
+  text-align: center;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .flags{
+    margin-top: 30px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .flex-container-1 {
+    width: 100%;
+    height: 700px;
+  }
+
+  header h2 {
+    font-size: 16px;
+  }
+
+  .input {
+    width: 100%;
+  }
+}
